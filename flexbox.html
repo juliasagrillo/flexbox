@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #d3d3d3;
+      font-family: sans-serif;
+    }
+
+    .linha {
+      margin: 10px 0;
+    }
+
+    .flex-container {
+      display: flex;
+      background-color: DodgerBlue;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+
+    .exemplo7 {
+    height: 100px;
+    align-items: center;
+  }
+
+    .exemplo8 {
+    height: 100px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+    .exemplo9 {
+    height: 100px;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+    .exemplo10 {
+    height: 100px;
+  }
+
+    .flex-container > div {
+      background-color: #f1f1f1;
+      margin: 5px;
+      padding: 10px;
+      font-size: 20px;
+      width: 40px;
+      text-align: center;
+    }
+
+    .row-reverse { flex-direction: row-reverse; }
+    .column-reverse { flex-direction: column-reverse; height: 150px; }
+    .center { justify-content: center; }
+    .flex-end { justify-content: flex-end; }
+    .space-between { justify-content: space-between; }
+    .space-around { justify-content: space-around; }
+    .space-evenly { justify-content: space-evenly; }
+    .column { flex-direction: column; height: 150px; }
+  </style>
+</head>
+<body>
+
+<h2>Flexbox: 10 Exemplos</h2>
+
+<div class="linha">1
+  <div class="flex-container row-reverse">
+    <div>1</div><div>2</div><div>3</div>
+  </div>
+</div>
+
+<div class="linha">2
+  <div class="flex-container column-reverse">
+    <div>1</div><div>2</div><div>3</div>
+  </div>
+</div>
+
+<div class="linha">3
+  <div class="flex-container center">
+    <div>1</div><div>2</div><div>3</div>
+  </div>
+</div>
+
+<div class="linha">4
+  <div class="flex-container flex-end">
+    <div>1</div><div>2</div><div>3</div>
+  </div>
+</div>
+
+<div class="linha">5
+    <div class="flex-container space-around">
+        <div>1</div><div>2</div><div>3</div>
+      </div>
+    </div>
+
+<div class="linha">6
+    <div class="flex-container space-between">
+        <div>1</div><div>2</div><div>3</div>
+      </div>
+    </div>
+    
+
+
+<div class="linha">7
+  <div class="flex-container exemplo7">
+    <div>1</div><div>2</div><div>3</div>
+  </div>
+</div>
+
+<div class="linha">8
+  <div class="flex-container exemplo8">
+    <div>1</div><div>2</div><div>3</div>
+  </div>
+</div>
+
+<div class="linha">9
+  <div class="flex-container exemplo9">
+    <div>1</div><div>2</div><div>3</div>
+  </div>
+</div>
+
+<div class="linha">10
+  <div class="flex-container exemplo10">
+    <div>1</div><div>2</div><div>3</div>
+  </div>
+</div>
+
+</body>
+</html>
